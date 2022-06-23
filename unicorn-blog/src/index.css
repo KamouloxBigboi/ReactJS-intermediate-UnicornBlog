@@ -43,7 +43,9 @@ code {
   
 }
 
-.container {
+.posts_lists {
 
-  
+  text-align: center;
+  box-sizing: border-box;
 }
+

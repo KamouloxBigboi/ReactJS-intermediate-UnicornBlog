@@ -7,7 +7,7 @@ export default function Navbar () {
         <nav className='nav'>
             <ul>
               <li>
-                <Link to="/"> Homepage </Link>
+                <Link to="/homepage"> Homepage </Link>
               </li>
                 <CustomLink to="/upload"> Upload </CustomLink>
                 <CustomLink to="/gallery"> Gallery </CustomLink>
@@ -20,7 +20,7 @@ export default function Navbar () {
 function CustomLink({to, children, ...props }) {
   const resolvedPath = useResolvedPath(to)
   const isActive = useMatch({ path: resolvedPath.pathname, end: true})
-  
+
   return (
     <li className={ isActive ? "active" : ""}>
       <Link to={to} {...props}>
