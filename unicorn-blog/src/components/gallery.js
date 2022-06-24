@@ -1,24 +1,48 @@
+import React from "react";
 
-import React, { useEffect, useState } from "react";
-const imageUrl = "https://jsonplaceholder.typicode.com/albums/";
+const HomePage = () => {
 
-export default function App() {
-  const [img, setImg] = useState();
+  const [images, setImages] = React.useState([])
 
-  const fetchImage = async () => {
-    const res = await fetch(imageUrl);
-    const imageBlob = await res.blob();
-    const imageObjectURL = URL.createObjectURL(imageBlob);
-    setImg(imageObjectURL);
-  };
+  React.useEffect(() => {
 
-  useEffect(() => {
-    fetchImage();
-  }, []);
+      // fetch from jsonplaceholder
+
+      fetch('https://jsonplaceholder.typicode.com/albums/')
+          .then((response) => response.json())
+          // .then((json) => console.log(json));
+          .then((json) => setImages(json));
+      },[])
 
   return (
-    <>
-      <img src={img} alt="imgs" />
-    </>
-  );
-}
+      
+      // Mapping and displaying image one by one
+
+      <div className="images">
+
+          <h1>All the images are here</h1>
+
+      <div className="images_list">
+          {
+             images && images.map((img) => (
+
+                  // Single Post 
+
+                  <div className="Images">
+                      <p> {img.url} </p>
+                  </div>
+
+              ))
+          }
+
+      </div>
+      
+      </div>
+)}
+
+export default HomePage
+  // const fetchImage = async () => {
+  //   const res = await fetch(imageUrl);
+  //   const imageBlob = await res.blob();
+  //   const imageObjectURL = URL.createObjectURL(imageBlob);
+  //   setImg(imageObjectURL);

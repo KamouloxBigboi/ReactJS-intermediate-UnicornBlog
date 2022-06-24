@@ -1,13 +1,5 @@
 import React from "react";
 
-// type PostType = {
-     
-//     id: Number,
-//     title: String,
-//     body: String,
-//     userId: Number,
-// }
-
 const HomePage = () => {
 
     const [posts, setPosts] = React.useState([])
