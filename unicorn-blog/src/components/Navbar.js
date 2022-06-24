@@ -17,6 +17,8 @@ export default function Navbar () {
   );
 }
 
+// Function not the main page to be refreshed once clicking on a link
+
 function CustomLink({to, children, ...props }) {
   const resolvedPath = useResolvedPath(to)
   const isActive = useMatch({ path: resolvedPath.pathname, end: true})

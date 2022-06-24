@@ -16,7 +16,7 @@ const HomePage = () => {
 
   return (
       
-      // Mapping and displaying image one by one
+      // Mapping images one by one
 
       <div className="images">
 
@@ -26,10 +26,12 @@ const HomePage = () => {
           {
              images && images.map((img) => (
 
-                  // Single Post 
+                  // Getting the images url 
 
                   <div className="Images">
-                      <p> {img.url} </p>
+                      
+                      <p>Url:  {img.url}</p>
+
                   </div>
 
               ))

@@ -1,3 +1,5 @@
+// Default page containing the posts
+
 import React from "react";
 
 const HomePage = () => {
@@ -26,7 +28,7 @@ const HomePage = () => {
             {
                posts && posts.map((posts) => (
 
-                    // Single Post 
+                    // All images
 
                     <div className="postCards">
                         <p>Id of the post :  {posts.id}</p>

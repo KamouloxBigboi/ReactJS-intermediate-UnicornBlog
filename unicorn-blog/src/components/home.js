@@ -7,6 +7,7 @@ export default function Home () {
     return (
       <>
         <Navbar />
+        {/* Outlet : Keep the information displayed when changing page */}
       <Outlet />
     </>
   )
