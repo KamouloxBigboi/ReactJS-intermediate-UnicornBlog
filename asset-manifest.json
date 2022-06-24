@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ReactJS-intermediate-UnicornBlog/unicornblog/static/css/main.e6f318b3.css",
-    "main.js": "/ReactJS-intermediate-UnicornBlog/unicornblog/static/js/main.8947b456.js",
-    "static/js/787.75afbe99.chunk.js": "/ReactJS-intermediate-UnicornBlog/unicornblog/static/js/787.75afbe99.chunk.js",
-    "index.html": "/ReactJS-intermediate-UnicornBlog/unicornblog/index.html",
-    "main.e6f318b3.css.map": "/ReactJS-intermediate-UnicornBlog/unicornblog/static/css/main.e6f318b3.css.map",
-    "main.8947b456.js.map": "/ReactJS-intermediate-UnicornBlog/unicornblog/static/js/main.8947b456.js.map",
-    "787.75afbe99.chunk.js.map": "/ReactJS-intermediate-UnicornBlog/unicornblog/static/js/787.75afbe99.chunk.js.map"
+    "main.css": "/ReactJS-intermediate-UnicornBlog/static/css/main.e6f318b3.css",
+    "main.js": "/ReactJS-intermediate-UnicornBlog/static/js/main.4ed21881.js",
+    "static/js/787.75afbe99.chunk.js": "/ReactJS-intermediate-UnicornBlog/static/js/787.75afbe99.chunk.js",
+    "index.html": "/ReactJS-intermediate-UnicornBlog/index.html",
+    "main.e6f318b3.css.map": "/ReactJS-intermediate-UnicornBlog/static/css/main.e6f318b3.css.map",
+    "main.4ed21881.js.map": "/ReactJS-intermediate-UnicornBlog/static/js/main.4ed21881.js.map",
+    "787.75afbe99.chunk.js.map": "/ReactJS-intermediate-UnicornBlog/static/js/787.75afbe99.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6f318b3.css",
-    "static/js/main.8947b456.js"
+    "static/js/main.4ed21881.js"
   ]
 }
