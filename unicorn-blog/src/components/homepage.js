@@ -2,6 +2,7 @@
 
 import React from "react";
 
+
 const HomePage = () => {
 
     const [posts, setPosts] = React.useState([])
@@ -30,7 +31,7 @@ const HomePage = () => {
 
                     // All images
 
-                    <div className="postCards">
+                    <div className="postCards" key={posts.id}>
                         <p>Id of the post :  {posts.id}</p>
                         <p>Title :  {posts.title}</p>
                         <p>{posts.body}</p>

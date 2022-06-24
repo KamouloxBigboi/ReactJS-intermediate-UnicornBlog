@@ -1,6 +1,6 @@
 import React from "react";
 
-const HomePage = () => {
+const Gallery = () => {
 
   const [images, setImages] = React.useState([])
 
@@ -8,7 +8,7 @@ const HomePage = () => {
 
       // fetch from jsonplaceholder
 
-      fetch('https://jsonplaceholder.typicode.com/albums/')
+      fetch('https://jsonplaceholder.typicode.com/albums/1/photos')
           .then((response) => response.json())
           // .then((json) => console.log(json));
           .then((json) => setImages(json));
@@ -41,9 +41,10 @@ const HomePage = () => {
       
       </div>
 )}
+            
 
 
-export default HomePage
+export default Gallery
   // const fetchImage = async () => {
   //   const res = await fetch(imageUrl);
   //   const imageBlob = await res.blob();
