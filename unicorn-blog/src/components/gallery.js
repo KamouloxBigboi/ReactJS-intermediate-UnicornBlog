@@ -1,51 +1,24 @@
-import React from "react";
 
-// type PostType = {
-     
-//     id: Number,
-//     title: String,
-//     body: String,
-//     userId: Number,
-// }
+import React, { useEffect, useState } from "react";
+const imageUrl = "https://jsonplaceholder.typicode.com/albums/";
 
-const Gallery = () => {
+export default function App() {
+  const [img, setImg] = useState();
 
-    const [img, setImages] = React.useState([])
+  const fetchImage = async () => {
+    const res = await fetch(imageUrl);
+    const imageBlob = await res.blob();
+    const imageObjectURL = URL.createObjectURL(imageBlob);
+    setImg(imageObjectURL);
+  };
 
-    React.useEffect(() => {
+  useEffect(() => {
+    fetchImage();
+  }, []);
 
-        // fetch images from jsonplaceholder
-
-        fetch('https://jsonplaceholder.typicode.com/albums/')
-            .then((response) => response.json())
-            // .then((json) => console.log(json));
-            .then((json) => setImages(json));
-        },[])
-
-    return (
-        
-        // Mapping and displaying images one by one
-
-        <div className="images">
-
-            <h1> All the images are here </h1>
-
-        <div className="images_list">
-            {
-               img && img.map((img) => (
-
-                    // All images
-
-                    <div className="postCards">
-                    <img src={img.url} alt="all_imgs"></img>  
-                    </div>
-
-                ))
-            }
-
-        </div>
-        
-        </div>
-)}
-
-export default Gallery
+  return (
+    <>
+      <img src={img} alt="imgs" />
+    </>
+  );
+}
