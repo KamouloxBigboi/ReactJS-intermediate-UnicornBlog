@@ -1,4 +1,4 @@
-// Test route and display : ok 
+// Testing route and display : ok 
 
 export default function Upload() {
     return (

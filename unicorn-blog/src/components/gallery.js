@@ -30,8 +30,8 @@ const HomePage = () => {
 
                   <div className="Images">
                       
-                      <p>Url:  {img.url}</p>
-
+                      <img src={img.url} alt="image from API"></img>
+                      
                   </div>
 
               ))
@@ -41,6 +41,7 @@ const HomePage = () => {
       
       </div>
 )}
+
 
 export default HomePage
   // const fetchImage = async () => {

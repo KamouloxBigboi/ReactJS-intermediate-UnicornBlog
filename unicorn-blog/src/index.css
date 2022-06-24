@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 body {
+  background-color: darksalmon;
   margin-left : 10rem;
   margin-right: 10rem;
   text-align: center;
